@@ -1,2 +1,17 @@
-<h1>Movies#edit</h1>
-<p>Find me in app/views/movies/edit.html.erb</p>
+<div class="banner" style="background-image: url(https://images.unsplash.com/photo-1478720568477-152d9b164e26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)">
+  <div class="container">
+  </div>
+</div>
+
+<div class="new-lists">
+  <div class="new-list">
+    <h1>Edit the <strong>movie</strong> !</h1>
+    <%= simple_form_for [ @movie ] do |f| %>
+      <%= f.input :title %>
+      <%= f.input :overview %>
+      <%= f.input :rating %>
+      <%= f.input :poster_url %>
+      <%= f.submit "Submit", class: "btn btn-success" %>
+    <% end %>
+  </div>
+</div>
