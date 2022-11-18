@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'lists#index'
+  root to: 'movies#index'
   resources :lists, only: [:index, :new, :show, :create, :destroy] do
     resources :bookmarks, only: [:new, :create]
   end
